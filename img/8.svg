@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="100" viewBox="0 0 250 100">
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="100" rx="14" fill="url(#grad4)"/>
+  <circle cx="70" cy="50" r="22" fill="#fff" opacity="0.95"/>
+  <path d="M70 17 L70 5 M70 83 L70 95 M35 50 L20 50 M120 50 L135 50 M47 25 L37 15 M93 25 L103 15 M47 75 L37 85 M93 75 L103 85" stroke="#f97316" stroke-width="4" opacity="0.9"/>
+  <path d="M170 25 C 180 40, 190 65, 160 82 C 130 65, 140 40, 150 30" fill="none" stroke="#fff" stroke-width="8" opacity="0.9"/>
+  <text x="16" y="92" fill="#ffedd5" font-family="Arial, sans-serif" font-size="14">Renewable Power</text>
+</svg>

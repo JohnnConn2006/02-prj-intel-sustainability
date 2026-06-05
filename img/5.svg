@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="100" viewBox="0 0 250 100">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="100" rx="14" fill="url(#grad1)"/>
+  <rect x="40" y="44" width="20" height="35" rx="4" fill="#fff" opacity="0.9"/>
+  <rect x="80" y="34" width="20" height="45" rx="4" fill="#fff" opacity="0.9"/>
+  <rect x="120" y="24" width="20" height="55" rx="4" fill="#fff" opacity="0.9"/>
+  <rect x="160" y="54" width="20" height="25" rx="4" fill="#fff" opacity="0.9"/>
+  <circle cx="210" cy="35" r="14" fill="#fff" opacity="0.9"/>
+  <text x="20" y="92" fill="#e0f2fe" font-family="Arial, sans-serif" font-size="14">2006 Emissions Data</text>
+</svg>

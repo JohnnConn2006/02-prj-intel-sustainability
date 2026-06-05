@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Bootstrap Icons for visual enhancements -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" />
+  
+  <!-- Custom Stylesheet (preserves timeline styling and adds Bootstrap customizations) -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Header / Hero Section -->
+  <!-- ============================================
+       HEADER / HERO SECTION (Preserved)
+       ============================================ -->
   <header>
     <div>
-      <!-- Ask Copilot to teach you about `.svg`. 🙂 You'll need to resize the logo with CSS. -->
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
+      <img src="img/intel-header-logo.svg" alt="Intel Logo - Corporate logo representing Intel Corporation" />
       <!-- Main Heading -->
       <h1>
         Sustainability Through the Ages
@@ -27,14 +36,16 @@
     </div>
   </header>
 
-  <!-- Timeline Cards Section -->
-  <section>
-
+  <!-- ============================================
+       TIMELINE CARDS SECTION (Preserved - DO NOT MODIFY)
+       Uses custom Flexbox layout for horizontal scrolling
+       ============================================ -->
+  <section class="timeline-section">
     <!-- Card 1: 1968 -->
     <div>
       <h2>1968</h2>
       <h3>Intel Founded</h3>
-      <!-- Add image -->
+      <img src="img/1.jpg" alt="Intel founding in 1968 - Historical moment showing the company's establishment" />
       <p>
         Robert Noyce and Gordon Moore rename the newly formed company 
         NM Electronics to Intel Corporation, laying the foundation for 
@@ -46,7 +57,7 @@
     <div>
       <h2>1971</h2>
       <h3>First Microprocessor</h3>
-      <!-- Add image -->
+      <img src="img/2.jpg" alt="Intel 4004 microprocessor from 1971 - Revolutionary computing component" />
       <p>
         Intel debuts the 4004, the world's first commercial microprocessor, 
         igniting the microprocessor revolution and propelling the future 
@@ -58,7 +69,7 @@
     <div>
       <h2>1978</h2>
       <h3>8086 Processor</h3>
-      <!-- Add image -->
+      <img src="img/3.jpg" alt="Intel 8086 processor from 1978 - Foundational x86 architecture" />
       <p>
         Launch of the 8086 processor, establishing the x86 architecture 
         that drives countless PCs and servers in the modern era.
@@ -69,7 +80,7 @@
     <div>
       <h2>1985</h2>
       <h3>386 Processor</h3>
-      <!-- Add image -->
+      <img src="img/4.jpg" alt="Intel 386 processor from 1985 - 32-bit computing breakthrough" />
       <p>
         Intel introduces the 386 processor with 32-bit architecture, 
         ushering in a new era of performance and multitasking for 
@@ -81,7 +92,7 @@
     <div>
       <h2>2006</h2>
       <h3>Peak GHG Emissions</h3>
-      <!-- Add image -->
+      <img src="img/5.svg" alt="2006 greenhouse gas emissions data - Intel's sustainability turning point" />
       <p>
         This year marks Intel's highest annual greenhouse gas emissions 
         for operations. Over subsequent years, Intel invests heavily in 
@@ -94,7 +105,7 @@
     <div>
       <h2>2020</h2>
       <h3>RISE Strategy</h3>
-      <!-- Add image -->
+      <img src="img/6.svg" alt="Intel RISE Strategy framework launched in 2020 - Responsible, Inclusive, Sustainable, Enabling" />
       <p>
         Intel launches its RISE (Responsible, Inclusive, Sustainable, 
         Enabling) strategy and 2030 goals, aiming to drive industry-wide 
@@ -106,7 +117,7 @@
     <div>
       <h2>2022</h2>
       <h3>Net-Zero By 2040</h3>
-      <!-- Add image -->
+      <img src="img/7.svg" alt="Intel net-zero emissions commitment by 2040 - Long-term sustainability goal" />
       <p>
         Intel announces its commitment to achieve net-zero greenhouse 
         gas emissions (Scope 1 and 2) across its global operations 
@@ -118,11 +129,11 @@
     <div>
       <h2>2023</h2>
       <h3>Renewable Electricity</h3>
-      <!-- Add image -->
+      <img src="img/8.svg" alt="Intel achieves 99% renewable electricity in 2023 - Major sustainability milestone" />
       <p>
         The company achieves 99% renewable electricity usage worldwide, 
         helping to drastically lower carbon emissions and driving progress 
-        toward Intel's long term sustainability goals.
+        toward Intel's long-term sustainability goals.
       </p>
     </div>
 
@@ -130,7 +141,7 @@
     <div>
       <h2>2024</h2>
       <h3>Sustainability Summit</h3>
-      <!-- Add image -->
+      <img src="img/9.svg" alt="Intel Sustainability Summit 2024 - Industry collaboration event" />
       <p>
         Intel hosts its first Sustainability Summit, uniting suppliers, 
         government officials, and industry leaders to collaborate on 
@@ -138,6 +149,674 @@
       </p>
     </div>
   </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+  
+  <p class="timeline-hint" role="status" aria-live="polite">Scroll to view timeline | Hover over cards to learn more!</p>
+
+  <!-- ============================================
+       SUSTAINABILITY INITIATIVES SECTION
+       Bootstrap 3-Column Grid Layout
+       Responsive: 1 column mobile, 2 columns tablet, 3 columns desktop
+       ============================================ -->
+  <section class="sustainability-section py-5">
+    <div class="container-lg">
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Our Sustainability Initiatives</h2>
+        <p class="lead text-muted">Discover the pillars of Intel's commitment to environmental responsibility</p>
+      </div>
+
+      <!-- Bootstrap Grid: 3 Columns -->
+      <div class="row g-4">
+        <!-- Column 1: RISE Strategy -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="initiative-card h-100 p-4 rounded-3 border border-light-subtle">
+            <!-- Icon (semantic and accessible) -->
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-lightbulb-fill text-primary" aria-hidden="true"></i>
+              <span class="visually-hidden">RISE Strategy Icon</span>
+            </div>
+            
+            <!-- Heading -->
+            <h3 class="h5 fw-bold mb-3">RISE Strategy</h3>
+            
+            <!-- Description -->
+            <p class="text-muted mb-4 flex-grow-1">
+              Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
+              Intel sets ambitious 2030 goals, including driving industry-wide 
+              progress on climate action, water stewardship, and waste reduction.
+            </p>
+            
+            <!-- Learn More Link (accessible button-style link) -->
+            <a href="#rise-details" class="btn btn-outline-primary btn-sm stretched-link" role="button">
+              Learn More
+              <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 2: Commitment -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="initiative-card h-100 p-4 rounded-3 border border-light-subtle">
+            <!-- Icon -->
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-hand-thumbs-up-fill text-success" aria-hidden="true"></i>
+              <span class="visually-hidden">Commitment Icon</span>
+            </div>
+            
+            <!-- Heading -->
+            <h3 class="h5 fw-bold mb-3">Net-Zero Commitment</h3>
+            
+            <!-- Description -->
+            <p class="text-muted mb-4 flex-grow-1">
+              In 2022, Intel pledged to achieve net-zero greenhouse gas emissions 
+              (Scope 1 and 2) by 2040. This commitment builds on decades of 
+              environmental initiatives and partnerships across the semiconductor 
+              industry.
+            </p>
+            
+            <!-- Learn More Link -->
+            <a href="#commitment-details" class="btn btn-outline-success btn-sm stretched-link" role="button">
+              Learn More
+              <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Column 3: Water & Waste -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="initiative-card h-100 p-4 rounded-3 border border-light-subtle">
+            <!-- Icon -->
+            <div class="icon-wrapper mb-3">
+              <i class="bi bi-droplet-fill text-info" aria-hidden="true"></i>
+              <span class="visually-hidden">Water and Waste Icon</span>
+            </div>
+            
+            <!-- Heading -->
+            <h3 class="h5 fw-bold mb-3">Water &amp; Waste</h3>
+            
+            <!-- Description -->
+            <p class="text-muted mb-4 flex-grow-1">
+              Intel conserves billions of gallons of water annually and 
+              collaborates with local communities to restore watersheds.
+              Intel also upcycles and recycles materials to reduce waste and 
+              advance a circular economy.
+            </p>
+            
+            <!-- Learn More Link -->
+            <a href="#water-waste-details" class="btn btn-outline-info btn-sm stretched-link" role="button">
+              Learn More
+              <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SUSTAINABILITY FAQ ACCORDION (Extra Credit)
+       Bootstrap Accordion Component
+       Improves information hierarchy and accessibility
+       ============================================ -->
+  <section class="faq-section py-5 bg-light">
+    <div class="container-lg">
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-3">Frequently Asked Questions</h2>
+        <p class="lead text-muted">Learn more about Intel's sustainability initiatives</p>
+      </div>
+
+      <!-- Bootstrap Accordion -->
+      <div class="accordion accordion-flush" id="sustainabilityAccordion">
+        
+        <!-- Accordion Item 1 -->
+        <div class="accordion-item border-0 border-bottom">
+          <h3 class="accordion-header">
+            <button 
+              class="accordion-button collapsed fw-semibold" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#faq-1" 
+              aria-expanded="false" 
+              aria-controls="faq-1">
+              What is the Intel RISE Strategy?
+            </button>
+          </h3>
+          <div 
+            id="faq-1" 
+            class="accordion-collapse collapse" 
+            data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body text-muted">
+              RISE stands for Responsible, Inclusive, Sustainable, and Enabling. 
+              It's Intel's comprehensive framework for driving sustainability across 
+              operations, supply chain, and products. The strategy includes 2030 goals 
+              focused on climate action, water stewardship, and waste reduction.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="accordion-item border-0 border-bottom">
+          <h3 class="accordion-header">
+            <button 
+              class="accordion-button collapsed fw-semibold" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#faq-2" 
+              aria-expanded="false" 
+              aria-controls="faq-2">
+              How is Intel reducing carbon emissions?
+            </button>
+          </h3>
+          <div 
+            id="faq-2" 
+            class="accordion-collapse collapse" 
+            data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body text-muted">
+              Intel is reducing carbon emissions through multiple initiatives: achieving 
+              99% renewable electricity usage globally, investing in energy-efficient 
+              manufacturing processes, implementing chemical abatement technologies, 
+              and committing to net-zero greenhouse gas emissions by 2040.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="accordion-item border-0 border-bottom">
+          <h3 class="accordion-header">
+            <button 
+              class="accordion-button collapsed fw-semibold" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#faq-3" 
+              aria-expanded="false" 
+              aria-controls="faq-3">
+              What is Intel doing about water conservation?
+            </button>
+          </h3>
+          <div 
+            id="faq-3" 
+            class="accordion-collapse collapse" 
+            data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body text-muted">
+              Intel conserves billions of gallons of water annually through advanced 
+              water recycling systems and efficient manufacturing processes. The company 
+              also collaborates with local communities to restore watersheds and 
+              advocates for responsible water management globally.
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="accordion-item border-0">
+          <h3 class="accordion-header">
+            <button 
+              class="accordion-button collapsed fw-semibold" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#faq-4" 
+              aria-expanded="false" 
+              aria-controls="faq-4">
+              How does Intel handle waste and circular economy?
+            </button>
+          </h3>
+          <div 
+            id="faq-4" 
+            class="accordion-collapse collapse" 
+            data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body text-muted">
+              Intel upcycles and recycles materials to reduce waste and advance a 
+              circular economy. The company works to minimize landfill waste, recovers 
+              valuable materials from electronic waste, and designs products and 
+              packaging with sustainability in mind.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       NEWSLETTER SUBSCRIPTION SECTION
+       Bootstrap Form with accessibility best practices
+       ============================================ -->
+  <section class="newsletter-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <!-- Section Header -->
+          <div class="text-center mb-5">
+            <h2 class="display-6 fw-bold mb-3">Stay Updated</h2>
+            <p class="lead text-muted">Subscribe to our newsletter for the latest updates on Intel's sustainability initiatives</p>
+          </div>
+
+          <!-- Bootstrap Form -->
+          <form id="newsletterForm" method="POST" action="#" class="needs-validation" novalidate>
+            <!-- Full Name Field -->
+            <div class="mb-3">
+              <label for="fullName" class="form-label fw-semibold">
+                Full Name
+                <span class="text-danger" aria-label="required field">*</span>
+              </label>
+              <input 
+                type="text" 
+                class="form-control form-control-lg" 
+                id="fullName" 
+                name="fullName" 
+                placeholder="John Doe"
+                required
+                aria-required="true"
+                aria-describedby="fullNameHelp" />
+              <div id="fullNameHelp" class="form-text">
+                Enter your first and last name.
+              </div>
+              <!-- Validation feedback (hidden by default, shown on error) -->
+              <div class="invalid-feedback" role="alert">
+                Please enter your full name.
+              </div>
+            </div>
+
+            <!-- Email Field -->
+            <div class="mb-3">
+              <label for="email" class="form-label fw-semibold">
+                Email Address
+                <span class="text-danger" aria-label="required field">*</span>
+              </label>
+              <input 
+                type="email" 
+                class="form-control form-control-lg" 
+                id="email" 
+                name="email" 
+                placeholder="you@example.com"
+                required
+                aria-required="true"
+                aria-describedby="emailHelp" />
+              <div id="emailHelp" class="form-text">
+                We'll never share your email with anyone else.
+              </div>
+              <!-- Validation feedback -->
+              <div class="invalid-feedback" role="alert">
+                Please enter a valid email address.
+              </div>
+            </div>
+
+            <!-- Checkbox for consent (accessibility best practice) -->
+            <div class="mb-4">
+              <div class="form-check">
+                <input 
+                  type="checkbox" 
+                  class="form-check-input" 
+                  id="consent" 
+                  name="consent"
+                  required
+                  aria-required="true"
+                  aria-describedby="consentHelp" />
+                <label class="form-check-label" for="consent">
+                  I agree to receive sustainability updates and news from Intel
+                </label>
+              </div>
+              <div id="consentHelp" class="form-text mt-2">
+                You can unsubscribe at any time by clicking the link in our emails.
+              </div>
+              <!-- Validation feedback -->
+              <div class="invalid-feedback" role="alert" style="display: block;">
+                You must agree before subscribing.
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button 
+              type="submit" 
+              class="btn btn-primary btn-lg w-100 fw-semibold"
+              aria-label="Subscribe to newsletter">
+              <i class="bi bi-envelope-check me-2" aria-hidden="true"></i>
+              Subscribe Now
+            </button>
+
+            <!-- Success Message (hidden by default) -->
+            <div 
+              id="successMessage" 
+              class="alert alert-success mt-3" 
+              role="alert" 
+              style="display: none;">
+              <i class="bi bi-check-circle me-2" aria-hidden="true"></i>
+              Thank you for subscribing! Check your email to confirm.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       Bootstrap Grid with semantic HTML structure
+       Fully responsive and accessible
+       ============================================ -->
+  <footer class="footer py-5 bg-dark border-top border-secondary-subtle">
+    <div class="container-lg">
+      <!-- Footer Content Grid -->
+      <div class="row g-4 mb-5">
+        <!-- Column 1: About -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3 class="h6 fw-bold text-uppercase mb-3">About Intel</h3>
+          <p class="small text-muted mb-0">
+            Intel is a global leader in semiconductor innovation and sustainability, 
+            committed to creating a better future for technology and our planet.
+          </p>
+        </div>
+
+        <!-- Column 2: Resources -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3 class="h6 fw-bold text-uppercase mb-3">Resources</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2">
+              <a href="https://www.intel.com/content/www/us/en/corporate-responsibility/sustainability.html" 
+                 class="text-decoration-none text-muted hover-link"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                Sustainability Report
+                <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#" class="text-decoration-none text-muted hover-link">
+                RISE Strategy Details
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-decoration-none text-muted hover-link">
+                Our Impact
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Legal -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3 class="h6 fw-bold text-uppercase mb-3">Legal</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2">
+              <a href="#privacy" class="text-decoration-none text-muted hover-link">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="mb-2">
+              <a href="#terms" class="text-decoration-none text-muted hover-link">
+                Terms of Use
+              </a>
+            </li>
+            <li>
+              <a href="#cookies" class="text-decoration-none text-muted hover-link">
+                Cookie Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="col-12 col-md-6 col-lg-3">
+          <h3 class="h6 fw-bold text-uppercase mb-3">Contact</h3>
+          <ul class="list-unstyled small">
+            <li class="mb-2">
+              <i class="bi bi-envelope me-2" aria-hidden="true"></i>
+              <a href="mailto:sustainability@intel.com" class="text-decoration-none text-muted hover-link">
+                sustainability@intel.com
+              </a>
+            </li>
+            <li>
+              <i class="bi bi-globe me-2" aria-hidden="true"></i>
+              <a href="https://www.intel.com" 
+                 class="text-decoration-none text-muted hover-link"
+                 target="_blank"
+                 rel="noopener noreferrer">
+                www.intel.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Divider -->
+      <hr class="border-secondary-subtle my-4">
+
+      <!-- Footer Bottom: Copyright -->
+      <div class="row">
+        <div class="col-12">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <!-- Copyright Notice -->
+            <p class="small text-muted mb-3 mb-md-0">
+              &copy; 2024 Intel Corporation. All rights reserved.
+              <br class="d-md-none">
+              <span class="d-none d-md-inline"> | </span>
+              Intel is committed to respecting human rights and avoiding complicity in human rights abuses.
+            </p>
+
+            <!-- Language Selector (demonstrates RTL capability) -->
+            <div class="d-flex gap-2">
+              <button 
+                class="btn btn-sm btn-outline-secondary language-toggle" 
+                data-lang="en" 
+                aria-label="Switch to English">
+                English
+              </button>
+              <button 
+                class="btn btn-sm btn-outline-secondary language-toggle" 
+                data-lang="ar" 
+                aria-label="Switch to Arabic">
+                العربية
+              </button>
+              <button 
+                class="btn btn-sm btn-outline-secondary language-toggle" 
+                data-lang="he" 
+                aria-label="Switch to Hebrew">
+                עברית
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       BOOTSTRAP 5 JAVASCRIPT
+       Required for interactive components (accordion, forms)
+       ============================================ -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ============================================
+       CUSTOM JAVASCRIPT
+       RTL Language Detection and Newsletter Form Handling
+       ============================================ -->
+  <script>
+    // =========================================
+    // RTL Language Detection and Switching
+    // =========================================
+    
+    // Define RTL languages
+    const RTL_LANGUAGES = ['ar', 'he', 'ur', 'fa'];
+    
+    // Get the HTML element
+    const htmlElement = document.documentElement;
+    
+    /**
+     * Apply RTL/LTR layout based on language
+     * @param {string} language - Language code (e.g., 'en', 'ar', 'he')
+     */
+    function applyLanguageLayout(language) {
+      if (RTL_LANGUAGES.includes(language)) {
+        // Apply RTL layout
+        htmlElement.setAttribute('dir', 'rtl');
+        htmlElement.setAttribute('lang', language);
+        document.body.setAttribute('data-text-direction', 'rtl');
+        
+        // Store preference
+        localStorage.setItem('preferredLanguage', language);
+        console.log(`Applied RTL layout for language: ${language}`);
+      } else {
+        // Apply LTR layout
+        htmlElement.setAttribute('dir', 'ltr');
+        htmlElement.setAttribute('lang', language);
+        document.body.setAttribute('data-text-direction', 'ltr');
+        
+        // Store preference
+        localStorage.setItem('preferredLanguage', language);
+        console.log(`Applied LTR layout for language: ${language}`);
+      }
+    }
+    
+    /**
+     * Update the active button state based on current language
+     */
+    function updateActiveButton(language) {
+      document.querySelectorAll('.language-toggle').forEach(btn => {
+        if (btn.getAttribute('data-lang') === language) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+    }
+    
+    /**
+     * Detect user's browser language and apply RTL if needed
+     */
+    function detectBrowserLanguage() {
+      // Check if user has a saved preference
+      const savedLanguage = localStorage.getItem('preferredLanguage');
+      if (savedLanguage) {
+        applyLanguageLayout(savedLanguage);
+        updateActiveButton(savedLanguage);
+        return;
+      }
+      
+      // Default to English
+      applyLanguageLayout('en');
+      updateActiveButton('en');
+    }
+    
+    /**
+     * Set up language toggle buttons after DOM is ready
+     */
+    function setupLanguageToggleButtons() {
+      document.querySelectorAll('.language-toggle').forEach(button => {
+        button.addEventListener('click', function(event) {
+          event.preventDefault();
+          const language = this.getAttribute('data-lang');
+          applyLanguageLayout(language);
+          updateActiveButton(language);
+          console.log(`Language changed to: ${language}`);
+        });
+      });
+    }
+    
+    /**
+     * Set up MutationObserver to detect when lang attribute changes
+     * This captures changes from Google Translate and other tools
+     */
+    function setupLanguageObserver() {
+      const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+          if (mutation.type === 'attributes' && mutation.attributeName === 'lang') {
+            const newLang = htmlElement.getAttribute('lang');
+            console.log(`Language attribute changed to: ${newLang}`);
+            
+            // Extract language code (e.g., 'ar' from 'ar-SA')
+            const langCode = newLang.split('-')[0].toLowerCase();
+            
+            // Apply appropriate text direction based on detected language
+            if (RTL_LANGUAGES.includes(langCode)) {
+              htmlElement.setAttribute('dir', 'rtl');
+              console.log(`Auto-applied RTL for detected language: ${langCode}`);
+            } else {
+              htmlElement.setAttribute('dir', 'ltr');
+              console.log(`Auto-applied LTR for detected language: ${langCode}`);
+            }
+          }
+        });
+      });
+      
+      // Watch for changes to the lang attribute on the html element
+      const config = {
+        attributes: true,
+        attributeFilter: ['lang'],
+        attributeOldValue: true
+      };
+      
+      observer.observe(htmlElement, config);
+      console.log('Language mutation observer initialized');
+    }
+    
+    // Detect language and set up buttons and observer on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      detectBrowserLanguage();
+      setupLanguageToggleButtons();
+      setupLanguageObserver();
+    });
+    
+    
+    // =========================================
+    // Newsletter Form Validation and Handling
+    // =========================================
+    
+    /**
+     * Handle newsletter form submission
+     * Implements Bootstrap validation and shows success message
+     */
+    document.addEventListener('DOMContentLoaded', function() {
+      const form = document.getElementById('newsletterForm');
+      const successMessage = document.getElementById('successMessage');
+      
+      if (!form) return;
+      
+      form.addEventListener('submit', function(event) {
+        // Prevent default submission
+        event.preventDefault();
+        
+        // Check form validity using Bootstrap's validation
+        if (!form.checkValidity()) {
+          // Show validation errors
+          event.stopPropagation();
+          form.classList.add('was-validated');
+          return;
+        }
+        
+        // Form is valid - get values
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const consent = document.getElementById('consent').checked;
+        
+        // Log form data (in production, send to server)
+        console.log('Newsletter Submission:', {
+          fullName: fullName,
+          email: email,
+          consent: consent,
+          timestamp: new Date().toISOString()
+        });
+        
+        // Show success message
+        successMessage.style.display = 'block';
+        successMessage.setAttribute('aria-live', 'polite');
+        
+        // Reset form
+        form.reset();
+        form.classList.remove('was-validated');
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+          successMessage.style.display = 'none';
+        }, 5000);
+        
+        // Optional: In production, send data to server here
+        // fetch('/api/subscribe', {
+        //   method: 'POST',
+        //   headers: { 'Content-Type': 'application/json' },
+        //   body: JSON.stringify({ fullName, email, consent })
+        // })
+      });
+    });
+  </script>
+
 </body>
 </html>

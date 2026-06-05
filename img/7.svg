@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="100" viewBox="0 0 250 100">
+  <defs>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#4d7c0f"/>
+    </linearGradient>
+  </defs>
+  <rect width="250" height="100" rx="14" fill="url(#grad3)"/>
+  <path d="M125 18 C 110 40, 100 60, 125 78 C 150 60, 140 40, 125 18 Z" fill="#fff" opacity="0.95"/>
+  <path d="M125 18 C 150 34, 170 50, 165 72" fill="none" stroke="#d9f99d" stroke-width="6" opacity="0.9"/>
+  <path d="M125 18 C 100 34, 80 50, 85 72" fill="none" stroke="#d9f99d" stroke-width="6" opacity="0.9"/>
+  <text x="16" y="92" fill="#dcfce7" font-family="Arial, sans-serif" font-size="14">Net-Zero Goal</text>
+</svg>
